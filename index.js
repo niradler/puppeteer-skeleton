@@ -1,8 +1,10 @@
 const taskRunner = require('./taskRunner');
 const firstPElement = require('./pipes/firstPElement');
 const puppeteerPage = require('./puppeteerPage');
-
+const {createCacheFolder} = require('./helpers')
 const demoUrls = ['https://scrapethissite.com/pages/']
+
+createCacheFolder();
 
 const main = async () => {
     try {
